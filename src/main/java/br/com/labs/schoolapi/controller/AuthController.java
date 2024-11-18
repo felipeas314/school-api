@@ -4,6 +4,8 @@ import br.com.labs.schoolapi.dto.JWTResponseDTO;
 import br.com.labs.schoolapi.dto.LoginDTO;
 import br.com.labs.schoolapi.model.User;
 import br.com.labs.schoolapi.utils.JWTUtils;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,6 +24,8 @@ public class AuthController {
     @Autowired
     JWTUtils jwtUtils;
 
+    @Operation(summary = "Obter o token de autencicaçao", description = "azeazeaz")
+    @ApiResponse(responseCode = "200", description = "sucesso")
     @PostMapping("login")
     public ResponseEntity<JWTResponseDTO> login(@RequestBody LoginDTO loginDTO) {
 

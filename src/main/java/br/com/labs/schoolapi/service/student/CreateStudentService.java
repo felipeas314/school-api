@@ -1,4 +1,4 @@
-package br.com.labs.schoolapi.service;
+package br.com.labs.schoolapi.service.student;
 
 import br.com.labs.schoolapi.dto.CreateStudentDTO;
 import br.com.labs.schoolapi.model.Student;

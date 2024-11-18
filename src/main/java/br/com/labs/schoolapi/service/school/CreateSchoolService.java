@@ -1,4 +1,4 @@
-package br.com.labs.schoolapi.service;
+package br.com.labs.schoolapi.service.school;
 
 public class CreateSchoolService {
 

@@ -1,6 +1,6 @@
 package br.com.labs.schoolapi.filter;
 
-import br.com.labs.schoolapi.service.UserDetailsServiceImpl;
+import br.com.labs.schoolapi.service.user.UserDetailsServiceImpl;
 import br.com.labs.schoolapi.utils.JWTUtils;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

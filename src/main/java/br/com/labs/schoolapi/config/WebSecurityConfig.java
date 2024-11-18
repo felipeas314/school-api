@@ -2,7 +2,7 @@ package br.com.labs.schoolapi.config;
 
 import br.com.labs.schoolapi.filter.AuthTokenFilter;
 import br.com.labs.schoolapi.handle.AuthEntryPointJwt;
-import br.com.labs.schoolapi.service.UserDetailsServiceImpl;
+import br.com.labs.schoolapi.service.user.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -58,7 +58,8 @@ public class WebSecurityConfig {
                 .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth ->
-                        auth.requestMatchers("/auth/**").permitAll()
+                        auth.requestMatchers("/auth/**","/swagger-ui/**","/v3/api-docs/**").permitAll()
+
                                 .anyRequest().authenticated()
                 );
 

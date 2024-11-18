@@ -1,4 +1,4 @@
-package br.com.labs.schoolapi.service;
+package br.com.labs.schoolapi.service.user;
 
 import br.com.labs.schoolapi.model.User;
 import br.com.labs.schoolapi.repository.UserRepository;

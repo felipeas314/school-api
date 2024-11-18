@@ -1,7 +1,7 @@
 package br.com.labs.schoolapi.controller;
 
 import br.com.labs.schoolapi.dto.CreateStudentDTO;
-import br.com.labs.schoolapi.service.CreateStudentService;
+import br.com.labs.schoolapi.service.student.CreateStudentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

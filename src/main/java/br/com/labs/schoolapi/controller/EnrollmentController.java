@@ -2,7 +2,7 @@ package br.com.labs.schoolapi.controller;
 
 import br.com.labs.schoolapi.dto.CreateEnrollmentDTO;
 import br.com.labs.schoolapi.model.Enrollment;
-import br.com.labs.schoolapi.service.CreateEnrollmentService;
+import br.com.labs.schoolapi.service.enrollment.CreateEnrollmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
